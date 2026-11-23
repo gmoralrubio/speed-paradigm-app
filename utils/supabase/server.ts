@@ -1,6 +1,6 @@
-import { createServerClient } from "@supabase/ssr";
-import { cookies } from "next/headers";
-import { getSupabaseConfig } from "./config";
+import { createServerClient } from '@supabase/ssr';
+import { cookies } from 'next/headers';
+import { getSupabaseConfig } from './config';
 
 export async function createClient() {
   const config = getSupabaseConfig();
