@@ -14,6 +14,9 @@ verifies them and the acceptance criteria supplied by the Orchestrator.
 - **Automated tests.** Run `pnpm test` for changes that affect the application
   or the test suite. Use the [Vitest skill](../.agents/skills/vitest/SKILL.md)
   for test configuration and patterns.
+- **Pre-commit.** When changing the [Husky hook](../.husky/pre-commit) or its
+  setup, run `git hook run pre-commit` to verify it runs lint and tests without
+  creating a commit. Verify that a failure in either check blocks the commit.
 - **UI.** Exercise changed flows in a browser at desktop and mobile sizes.
   Check keyboard access, visible focus, control labels, and user-facing states.
   Use the `web-design-guidelines` skill in `.agents/skills/` at the repository
