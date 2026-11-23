@@ -1,21 +1,20 @@
 // @vitest-environment jsdom
 
-import { cleanup, render, screen } from "@testing-library/react";
+import { cleanup, render, screen, within } from "@testing-library/react";
 import { afterEach, expect, test } from "vitest";
 import Home from "@/app/page";
 
 afterEach(cleanup);
 
-test("renders the home page heading and documentation link", () => {
+test("renders the project heading in the main landmark", () => {
   render(<Home />);
 
+  const main = screen.getByRole("main");
   expect(
-    screen.getByRole("heading", {
+    within(main).getByRole("heading", {
       level: 1,
-      name: "To get started, edit the page.tsx file.",
+      name: "Speed Paradigm App",
     }),
   ).toBeDefined();
-  expect(
-    screen.getByRole("link", { name: "Documentation" }).getAttribute("href"),
-  ).toMatch(/^https:\/\/nextjs\.org\/docs(?:\?|$)/);
+  expect(screen.getAllByRole("heading", { level: 1 })).toHaveLength(1);
 });
