@@ -15,6 +15,16 @@ pnpm dev
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 Run `pnpm build` for a production build and TypeScript validation.
 
+## Supabase
+
+Copy [`.env.example`](.env.example) to `.env.local` and fill in the project URL
+and publishable key from Supabase. Set both variables in the deployment
+environment before building for production.
+
+The homepage sample reads `id` and `name` from `public.todos` through the Data
+API. It needs a table exposed with the intended public read access. The homepage
+remains accessible when the variables or table are unavailable.
+
 ## Testing
 
 Use `pnpm test` to run the Vitest suite once and `pnpm test:watch` to rerun
