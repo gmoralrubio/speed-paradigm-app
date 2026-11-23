@@ -1,3 +1,16 @@
+# Speed Paradigm App
+
+This Next.js project is a practical exercise in building and reviewing an application with three Codex agents.
+
+- Use pnpm. `pnpm build` runs the production build and TypeScript validation.
+- For application changes, follow the [three-agent workflow](docs/agent-workflow.md).
+
+## Task guides
+
+- [Implementation](agents/DEVELOP.md)
+- [Testing and review](agents/TESTING.md)
+- [Production verification](docs/release.md)
+
 <!-- BEGIN:nextjs-agent-rules -->
 
 ## This is NOT the Next.js you know
