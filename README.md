@@ -20,6 +20,15 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Testing
+
+Use Node.js 22.22.2 or later on the 22.x line, 24.15.0 or later on the 24.x
+line, or Node.js 26 or newer.
+
+Use `pnpm test` to run the Vitest suite once and `pnpm test:watch` to rerun
+tests as files change. Component tests that need a DOM use the
+`// @vitest-environment jsdom` directive.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

@@ -11,6 +11,9 @@ verifies them and the acceptance criteria supplied by the Orchestrator.
 - **Next.js and TypeScript.** Verify behavior against the installed framework
   docs where relevant. For application changes, run `pnpm lint` and
   the production build listed in [AGENTS.md](../AGENTS.md).
+- **Automated tests.** Run `pnpm test` for changes that affect the application
+  or the test suite. Use the [Vitest skill](../.agents/skills/vitest/SKILL.md)
+  for test configuration and patterns.
 - **UI.** Exercise changed flows in a browser at desktop and mobile sizes.
   Check keyboard access, visible focus, control labels, and user-facing states.
   Use the `web-design-guidelines` skill in `.agents/skills/` at the repository
