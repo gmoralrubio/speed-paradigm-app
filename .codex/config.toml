@@ -1,0 +1,14 @@
+[mcp_servers.engram]
+command = "sh"
+args = [
+  "-c",
+  '''
+set -eu
+project_root=$(git rev-parse --show-toplevel)
+cd "$project_root"
+umask 077
+export ENGRAM_DATA_DIR="$project_root/.engram/local"
+export ENGRAM_CLOUD_AUTOSYNC=0
+exec engram mcp --tools=mem_search,mem_get_observation,mem_save --project speed-paradigm-app
+''',
+]

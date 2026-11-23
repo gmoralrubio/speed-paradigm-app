@@ -34,6 +34,10 @@ yarn-error.log*
 .env*
 !/.env.example
 
+# Engram project memory
+/.engram/*
+!/.engram/config.json
+
 # vercel
 .vercel
 
