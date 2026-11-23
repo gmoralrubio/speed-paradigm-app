@@ -6,6 +6,9 @@ final acceptance. Both subagents report directly to it.
 Follow the [pull request workflow](pull-requests.md) to hand off a reviewed
 PR. Only the user performs the merge.
 
+Use [project memory](agent-memory.md) when prior decisions or verified
+findings can inform the assignment. Give both agents the relevant context.
+
 1. Define a small task with observable acceptance criteria, edit boundaries,
    relevant context, and verification steps. Give both agents the same criteria.
    Include any known baseline failures with evidence and link task-specific

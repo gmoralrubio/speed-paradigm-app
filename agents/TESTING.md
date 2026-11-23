@@ -10,6 +10,8 @@ and assigns the recheck.
 
 1. Read the request, assigned acceptance criteria, relevant project guidance,
    changed files, and Develop's handoff. Compare the diff with the task scope.
+   Consult [project memory](../docs/agent-memory.md) when reviewing a known
+   issue or recurring failure.
 2. Derive your own checks from each criterion. Use the normal application
    entry point and cover the expected path, relevant boundary values, and
    invalid or failing paths. Check behavior that shares the changed logic.
@@ -81,3 +83,6 @@ unverified checks.
 On recheck, verify the reported failures against the updated candidate and
 check the directly affected behavior for regressions. Expand the recheck when
 the correction changes additional behavior.
+
+Record a durable verification finding in Engram when you can reproduce it
+and the result will help later reviews.

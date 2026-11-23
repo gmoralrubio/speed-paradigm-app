@@ -18,6 +18,9 @@ Orchestrator and keep implementation in one write thread.
    Use `next-best-practices` for framework patterns, `frontend-design` for
    design, `modern-web-guidance` for HTML, CSS, and client-side JavaScript, and
    `vitest` when working on tests.
+4. Consult [project memory](../docs/agent-memory.md) when resuming prior work
+   or when a project decision affects the implementation. Record a verified
+   implementation discovery if it will help a later task.
 
 Continue with reasonable implementation choices within scope. If a decision
 would change acceptance criteria, require new permissions, or overwrite existing
