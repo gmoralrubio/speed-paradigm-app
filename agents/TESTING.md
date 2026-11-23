@@ -36,8 +36,9 @@ and assigns the recheck.
   or the test suite. Use the [Vitest skill](../.agents/skills/vitest/SKILL.md)
   for test configuration and patterns.
 - **Pre-commit.** When changing the [Husky hook](../.husky/pre-commit) or its
-  setup, run `git hook run pre-commit` to exercise lint and tests. Verify in
-  a temporary repository that a failure in either check blocks the commit.
+  setup, run `git hook run pre-commit` to exercise formatting, lint, type
+  checking, and tests. Verify in a temporary repository that a failure in any
+  check blocks the commit.
 - **UI.** Exercise changed flows in a browser at desktop and mobile sizes.
   Check keyboard access, visible focus, control labels, and user-facing states.
   Use the [Web Interface Guidelines skill](../.agents/skills/web-design-guidelines/SKILL.md)

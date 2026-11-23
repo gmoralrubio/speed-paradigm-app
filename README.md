@@ -31,9 +31,15 @@ Use `pnpm test` to run the Vitest suite once and `pnpm test:watch` to rerun
 tests as files change. Component tests that need a DOM use the
 `// @vitest-environment jsdom` directive.
 
-After a local `pnpm install`, Husky runs `pnpm lint` and `pnpm test` before
-each commit. Either command can block the commit. Run `pnpm prepare` to
-reinstall the hook if needed.
+Run `pnpm typecheck` to generate the Next.js types and check TypeScript without
+a production build.
+
+Run `pnpm format` to apply Prettier formatting. Run `pnpm format:check` to check
+formatting without editing files.
+
+After a local `pnpm install`, Husky runs `pnpm format:check`, `pnpm lint`,
+`pnpm typecheck`, and `pnpm test` before each commit. A failure in any check
+blocks the commit. Run `pnpm prepare` to reinstall the hook if needed.
 
 ## Deployment
 

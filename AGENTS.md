@@ -1,8 +1,10 @@
 # Speed Paradigm App
 
-This Next.js project is a practical exercise in building and reviewing an application with three Codex agents.
+This Next.js and TypeScript project is a practical exercise in building and reviewing an application with three Codex agents.
 
-- Use pnpm. `pnpm build` runs the production build and TypeScript validation.
+- Write application code in TypeScript (`.ts` or `.tsx`).
+- Use pnpm. Run `pnpm typecheck` to check types without a production build.
+- Run `pnpm build` for the production build and TypeScript validation.
 - For application changes, follow the [three-agent workflow](docs/agent-workflow.md).
 
 ## Task guides
@@ -10,6 +12,8 @@ This Next.js project is a practical exercise in building and reviewing an applic
 - [Implementation](agents/DEVELOP.md)
 - [Testing and review](agents/TESTING.md)
 - [Production verification](docs/release.md)
+- [Advanced TypeScript types](.agents/skills/typescript-advanced-types/SKILL.md) for complex types and reusable type utilities.
+- [Clean Code](.agents/skills/clean-code/SKILL.md) for implementation and refactoring guidance.
 
 <!-- BEGIN:nextjs-agent-rules -->
 

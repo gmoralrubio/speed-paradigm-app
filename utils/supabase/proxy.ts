@@ -1,6 +1,6 @@
-import { createServerClient, type SetAllCookies } from "@supabase/ssr";
-import { type NextRequest, NextResponse } from "next/server";
-import { getSupabaseConfig } from "./config";
+import { createServerClient, type SetAllCookies } from '@supabase/ssr';
+import { type NextRequest, NextResponse } from 'next/server';
+import { getSupabaseConfig } from './config';
 
 export async function updateSession(request: NextRequest) {
   const config = getSupabaseConfig();
